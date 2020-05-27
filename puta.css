@@ -1,0 +1,128 @@
+/* Fuente Importada de Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+
+/* Body y Header */
+
+@media (orientation: portrait) {
+    html {
+      background-color: lightskyblue;
+    }
+  }
+  
+  @media (orientation: landscape) {
+    html {
+      background-color:lightgreen;
+    }
+  }
+
+  header {
+      background-color: salmon;
+      text-align: center;
+  }
+
+  span.header {
+    color:darkblue;
+    font-family: "Zhi Mang Xing"; 
+    font-size: 250%;
+    font-weight: bold;
+    text-shadow: gray 6px 0;
+    letter-spacing: 10px;
+  }
+
+  /* NAVEGADOR */
+
+    ul.nav {
+    list-style-type: none;
+    text-align: center;
+    }
+  
+    li.nav {
+    background-color: salmon;
+    border: black 2px solid;
+    display: inline;
+    margin-right: 10px;
+    }
+
+    a.nav:hover {
+    background-color: rgb(228,241,33);
+    color: darkblue;
+    }
+
+    /* Section 1 */
+
+section.section1 {
+    background-color: lightsalmon ;
+    font-size: 75%;
+}
+
+/* contadores dinaÃ‚Â¡micos para lista */
+
+p.reset_touring {
+    counter-reset: cuenta-colores;
+}
+
+p.touring::before {
+    content: counter(cuenta-colores)". "; ;
+    counter-increment: cuenta-colores;
+}
+
+/* Section 2 */ 
+
+section.sect2 {
+    background-color: lightsalmon;
+    font-size: 70%;
+}
+
+table.tabla1{
+    border: 2;
+    background-color: lightskyblue;
+    width: 45%;
+    text-align: center;
+}
+
+td.caja:hover {
+    color: blue;
+    border-color: blue;
+}
+
+input.respuesta:focus {
+    border-color: red solid cm;
+    border: red solid;
+    padding: 4px;
+    background-color: blue ;
+    color: white;
+}
+
+/* Section 3 */
+
+hr.section3{
+    height: 25px;
+    border-color: red;
+    background-color:yellow;
+    width: 55%;
+}
+
+/* Section 4 */
+
+section.sect4 {
+    background-color: lightblue;
+    font-size: 50%;
+}
+
+p.formas {
+    border-color: red green red;
+    border-width: 20px 50px;
+    border-style: dashed solid;
+    border-spacing: 8cm;
+    font-size: 200%;
+    text-align: center;
+    color: blue;
+  }
+
+
+/* Footer */
+
+  footer {
+      background-color:lightslategray;
+  }
